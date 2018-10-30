@@ -99,13 +99,48 @@ let turtleMovements = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
 //       console.log(turtleMovements);
 //     })
 
-  // forEach, filter, map
-// let movements = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
-// movements = movements.filter(movement => movement[0] >= 0 && movement[1] >= 0);
 
-// distances = movements.map(movement => movement[0] + movement[1]);
+let string = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest';
+let splitString = string
+    .split(' ')
+    .reduce((accumulator, currentValue) => {
+      if (currentValue.length === 3)
+      return accumulator + ' ';
+    
+      return accumulator + currentValue[currentValue.length-1].toUpperCase();
+    }, '');
 
-// distances.forEach(distance => {
-//     console.log(distance);
-// });
+console.log(splitString)
 
+//console.log(splitString.reduce(reducer(decoded)));
+
+// const input = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest';
+// const decoded = input
+//       .split(' ')
+//       .reduce((decodedString, word) => {
+//         if (word.length === 3) return decodedString + ' ';
+
+//         return decodedString + word[word.length - 1].toUpperCase();
+//     }, '');
+// console.log(decoded);
+
+
+
+
+
+
+
+
+
+
+
+
+//const reducer = (accumulator, currentValue) => accumulator + currentValue;
+
+//let decoded = ' ';
+
+
+
+//splitString.reduce(reducer)
+
+//console.log(splitString);
