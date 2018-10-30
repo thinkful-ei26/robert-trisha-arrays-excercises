@@ -70,6 +70,21 @@
 
 let turtleMovements = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
 
+// **** filter
+// turtleMovements = turtleMovements.filter(movement => movement[0] >= 0 && movement[1] >= 0);
+// console.log(turtleMovements);
+
+// **** MAP ***
+// const map1 = turtleMovements.map(movement => movement[0]+ movement[1]);
+// console.log(map1);
+
+// **** forEACH
+// const map2 = turtleMovements.forEach(function(movement){
+//   console.log(movement[0] + movement[1])
+// });
+
+//console.log(map2);
+
 // turtleMovements.filter(function(){
 //     for (let i = 0; i <= turtleMovements.length -1; i++){
 //       if (turtleMovements[i][0] < 0 || turtleMovements[i][1] < 0){
@@ -84,9 +99,6 @@ let turtleMovements = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
 //       console.log(turtleMovements);
 //     })
 
-turtleMovements = turtleMovements.filter(movement => movement[0] >= 0 && movement[1] >= 0);
-console.log(turtleMovements);
-
   // forEach, filter, map
 // let movements = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
 // movements = movements.filter(movement => movement[0] >= 0 && movement[1] >= 0);
@@ -96,3 +108,4 @@ console.log(turtleMovements);
 // distances.forEach(distance => {
 //     console.log(distance);
 // });
+
